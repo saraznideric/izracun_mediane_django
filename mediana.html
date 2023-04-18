@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mediana/bootstrap.min.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Mediana</title>
+</head>
+
+<body>
+  <div class="container">
+    <br>
+    <h3>IZRAČUN MEDIANE</h3>
+    <p><strong>Seznam števil</strong></p>
+    <ul id="seznam"></ul>
+    <p id="tabela-medianov"></p>
+
+    <p>
+
+      <button id="dodaj-nakljucno" class="btn btn-outline-dark">Dodaj naključno število</button>
+    <div class="input-group">
+      <input type="number" id="dodaj-stevilo" placeholder="Izberi število" class="form-control">
+      <button id="dodaj" class="btn btn-outline-dark">Dodaj število</button>
+    </div>
+    <br>
+
+    <button id="odstrani-nakljucno" class="btn btn-outline-dark">Odstrani naključno število</button>
+    <button id="odstrani-vse" class="btn btn-outline-dark">Odstrani vse</button>
+    <button id="izracunaj-median" class="btn btn-outline-dark">Izračunaj mediano</button>
+
+    </p>
+    <div>
+      <table id="tabela-mediana">
+        <thead>
+          <tr>
+            <th>Mediana</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-vsebina">
+        </tbody>
+      </table>
+
+
+      <ul></ul>
+
+    </div>
+    <script src="mediana.js"></script>
+
+  </div>
+</body>
+
+</html>
+<style>
+  .btn-outline-dark {
+    background-color: #a9449a;
+    color: white;
+    border-color: #f5eeee;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 2px
+  }
+
+  .btn-outline-dark:hover {
+    background-color: #c181b6;
+    color: white;
+  }
+
+  .form-control {
+    display: flex;
+    align-items: center;
+    width: 10px;
+    height: 35px;
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+    width: 300px;
+  }
+</style>
